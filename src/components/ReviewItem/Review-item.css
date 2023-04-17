@@ -1,0 +1,49 @@
+.review-item {
+    width: 571px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+
+}
+
+.right p {
+    margin: 0 15px;
+}
+
+.delete {
+    margin: 26px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(235, 87, 87, 0.3);
+    border: none;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.delete:hover {
+    background: #d0bdbd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.delete:active {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+}
+
+.trash {
+    height: 31px;
+    width: 27px;
+    color: #EB5757;
+}

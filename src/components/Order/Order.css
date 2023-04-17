@@ -1,0 +1,23 @@
+.order-cart {
+    background: rgba(255, 153, 0, 0.3);
+    height: fit-content;
+    padding: 24px;
+    position: sticky;
+    top: 0;
+}
+.clear-b{
+    margin-right: 20px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    transition: 300ms;
+}
+.clear-b:hover{
+    background: #ff0000;
+    color: white;
+    
+}
+.review-b:hover{
+    background-color: #f6ff00;
+}
