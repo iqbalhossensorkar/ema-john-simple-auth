@@ -1,0 +1,129 @@
+.form-container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    margin: 104px auto;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.form-title {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.form-control label {
+    display: block;
+    margin-top: 28px;
+    margin-left: 52px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+}
+
+.form-control input {
+    margin-left: 42px;
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+
+}
+
+.btn-submit {
+    cursor: pointer;
+    margin-left: 42px;
+    margin-top: 42px;
+    margin-bottom: 8px;
+    width: 415px;
+    height: 55px;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: rgba(255, 153, 0, 0.6);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+
+.btn-submit:active {
+    transform: translateY(2px);
+}
+
+.info {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    text-align: center;
+}
+
+.login {
+    color: #FF9900;
+}
+
+.hr {
+    width: 80%;
+}
+
+.or {
+    background: #ffffff;
+    width: 50px;
+    padding-left: 30px;
+    margin: -20px auto 10px;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 34px 40px 42px;
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #2A414F;
+    border: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.google {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-google:hover {
+    background: #aca9a9;
+}
+
+.btn-google:active {
+    transform: translateY(-2px);
+}
+
+.bg {
+    position: absolute;
+    width: 500px;
+    height: 730px;
+    margin: 104px auto;
+    border-radius: 8px;
+    background: #FFE0B3;
+    left: 490px;
+    top: 100px;
+}
