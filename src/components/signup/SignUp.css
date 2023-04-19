@@ -29,6 +29,7 @@
 }
 
 .form-control input {
+    padding-left: 15px;
     margin-left: 42px;
     width: 415px;
     height: 55px;

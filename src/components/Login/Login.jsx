@@ -1,14 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate, } from 'react-router-dom';
 import google from "../../icons/google.png"
 import './Login.css'
 import { AuthContext } from '../providers/AuthProvider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 
 
 const Login = () => {
     const { logIn } = useContext(AuthContext)
     const navigate = useNavigate();
     const location = useLocation();
+    const [show, setShow] = useState(false);
+    const handleShowHide = () => {
+        setShow(!show);
+    }
     // console.log(location);
     const from = location?.state?.from?.pathname || '/';
 
@@ -40,11 +46,16 @@ const Login = () => {
                     </div>
                     <div className='form-control'>
                         <label htmlFor="password">Password</label>
-                        <input type="password" name="password" id="" required />
+                        <input type={show ? "text" : "password"} name="password" id="" required />
+                        <div style={{marginLeft: '430px', marginTop: '-40px'}} onClick={handleShowHide}>
+                            {
+                                show ? <FontAwesomeIcon icon={faEye}></FontAwesomeIcon> : <FontAwesomeIcon icon={faEyeSlash}></FontAwesomeIcon>
+                            }
+                        </div>
                     </div>
                     <input className='btn-submit' type="submit" value="Login" />
                 </form>
-                <p className='info'>New to Ema-john ? <Link to="/register" className='login'> Create New Account</Link></p>
+                <p className='info'>New to Ema-john ? <Link to="/signin" className='login'> Create New Account</Link></p>
                 <hr className='hr' />
                 <p className='or'>or</p>
                 <button className='btn-google'><img src={google} alt="" className='google' /> Continue with Google</button>
