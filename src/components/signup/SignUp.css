@@ -110,7 +110,7 @@
 }
 
 .btn-google:hover {
-    background: #aca9a9;
+    background: rgba(255, 153, 0, 0.3);
 }
 
 .btn-google:active {
